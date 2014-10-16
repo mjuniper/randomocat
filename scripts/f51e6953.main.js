@@ -1,0 +1,1 @@
+$(function(){$("#octocat").on("click",function(){$.getJSON("http://octodexapi.herokuapp.com/?random",function(a){$("#octocat").attr("src","https://octodex.github.com"+a.image)})})});
