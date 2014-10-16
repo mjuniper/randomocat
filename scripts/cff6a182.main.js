@@ -1,0 +1,1 @@
+$(function(){var a={};$("#octocat").on("click",function(){$.ajax({url:"https://cors-anywhere.herokuapp.com/http://octodexapi.herokuapp.com/?random",success:function(b){a=b,$("#octocat").attr("src","https://octodex.github.com"+b.image)},dataType:"json"})}).on("load",function(){$("#which-octocat").text(a.name)})});
